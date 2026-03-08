@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Paradigm Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Para<span>digm</span></a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Our Gallery</h1>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Gallery</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-label">Portfolio</p>
+          <h2 class="section-title" id="gallery-heading">Our Work in Detail</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">From branding to digital campaigns — here's a look at what we've been building.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filter" role="group" aria-label="Filter gallery by category">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="photo">Photography</button>
+          <button class="filter-btn" data-filter="motion">Motion</button>
+        </div>
+
+        <!-- Gallery Grid (12 items — 9+ required) -->
+        <div class="gallery-grid--full" id="gallery-container">
+
+          <div class="gallery-item wide" data-category="branding">
+            <img src="images/gallery-1.jpg" alt="Brand identity system for Apex Tech startup — logo, colors, typography" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Apex Tech — Brand Identity</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="web">
+            <img src="images/gallery-2.jpg" alt="E-commerce website redesign for Bloom Botanicals" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Bloom — Web Design</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="photo">
+            <img src="images/gallery-3.jpg" alt="Product photography series for handcrafted ceramics brand" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Ceramic Co. — Photography</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="web">
+            <img src="images/gallery-4.jpg" alt="Mobile app UI design for Tempo fitness application" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Tempo App — UI Design</p>
+            </div>
+          </div>
+
+          <div class="gallery-item wide" data-category="motion">
+            <img src="images/gallery-5.jpg" alt="Motion graphics and title sequence for documentary film" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Shift Film — Motion Graphics</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="branding">
+            <img src="images/gallery-6.jpg" alt="Packaging design for artisan coffee brand Elevate" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Elevate Coffee — Packaging</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="photo">
+            <img src="images/gallery-7.jpg" alt="Architecture and interior photography for hospitality brand" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>The Haven — Architecture</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="web">
+            <img src="images/gallery-8.jpg" alt="Dashboard and data visualization design for SaaS analytics platform" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>DataFlow — Dashboard</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="branding">
+            <img src="images/gallery-9.jpg" alt="Visual identity and stationery design for legal firm Meridian" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Meridian Law — Identity</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="motion">
+            <img src="images/gallery-10.jpg" alt="Animated brand story video for sustainable fashion label" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Verdant — Brand Film</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="web">
+            <img src="images/gallery-11.jpg" alt="Non-profit website design for youth mentorship organization" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Rise Up — Web Design</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="photo">
+            <img src="images/gallery-12.jpg" alt="Lifestyle photography campaign for active outdoor apparel brand" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Summit Gear — Campaign</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Have a Project<br>in Mind?</h2>
+        <p>We're always looking for interesting new challenges. Let's talk about what we can build together.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn--primary">Start Your Project</a>
+          <a href="about.html" class="btn btn--outline">Learn About Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Para<span>digm</span></a>
+          <p>A creative studio dedicated to building bold digital products that connect brands with people. Based in New York City.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html">Brand Identity</a></li>
+            <li><a href="about.html">Web Design</a></li>
+            <li><a href="about.html">Mobile Apps</a></li>
+            <li><a href="about.html">Digital Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Get updates on our latest work and creative insights.</p>
+          <form class="newsletter-form" action="#" method="post" novalidate>
+            <label for="footer-email-gallery" class="sr-only">Email for newsletter</label>
+            <input type="email" id="footer-email-gallery" name="footer-email" placeholder="Enter your email" required autocomplete="email" />
+            <button type="submit" aria-label="Subscribe to newsletter">&#8594;</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 <a href="index.html">Paradigm Studio</a>. All rights reserved.</p>
+        <nav aria-label="Social media links">
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Follow us on Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Connect on LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Watch on YouTube">▶</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Navbar scroll */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* Mobile nav */
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
+
+    /* Gallery filter */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('#gallery-container .gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const cat = item.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

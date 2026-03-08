@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradigm — Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Para<span>digm</span></a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SLIDER ========== -->
+    <section class="hero" aria-label="Featured slides">
+      <div class="slider">
+
+        <!-- Slide 1 -->
+        <div class="slide active" role="img" aria-label="Slide 1: Creative Design">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <div class="container">
+              <div class="slide-text">
+                <span class="label">Welcome to Paradigm</span>
+                <h1>We Create Bold<br>Digital Experiences</h1>
+                <p>Award-winning design and development studio crafting thoughtful digital products that make an impact.</p>
+                <div class="slide-btns">
+                  <a href="about.html" class="btn btn--primary">Discover Our Story</a>
+                  <a href="gallery.html" class="btn btn--outline">View Our Work</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" role="img" aria-label="Slide 2: Our Services">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <div class="container">
+              <div class="slide-text">
+                <span class="label">What We Do</span>
+                <h1>Turning Ideas Into<br>Reality</h1>
+                <p>From concept to launch, we partner with visionary clients to build products that matter.</p>
+                <div class="slide-btns">
+                  <a href="contact.html" class="btn btn--accent">Start a Project</a>
+                  <a href="about.html" class="btn btn--outline">Meet the Team</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" role="img" aria-label="Slide 3: Our Portfolio">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <div class="container">
+              <div class="slide-text">
+                <span class="label">Portfolio Highlights</span>
+                <h1>Work That Speaks<br>For Itself</h1>
+                <p>Explore a curated selection of projects spanning branding, web, and digital campaigns.</p>
+                <div class="slide-btns">
+                  <a href="gallery.html" class="btn btn--primary">View Gallery</a>
+                  <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="slider-prev" aria-label="Previous slide">&#8592;</button>
+        <button class="slider-next" aria-label="Next slide">&#8594;</button>
+
+        <div class="slider-dots" role="tablist" aria-label="Slide navigation">
+          <button class="dot active" role="tab" aria-selected="true" aria-label="Go to slide 1"></button>
+          <button class="dot" role="tab" aria-selected="false" aria-label="Go to slide 2"></button>
+          <button class="dot" role="tab" aria-selected="false" aria-label="Go to slide 3"></button>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">Scroll Down</div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT PREVIEW ========== -->
+    <section class="section" id="about-preview" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-preview">
+
+          <div class="about-preview-img">
+            <img src="images/about.jpg" alt="Our team collaborating in the studio" />
+          </div>
+
+          <div class="about-preview-text">
+            <p class="section-label">Who We Are</p>
+            <h2 class="section-title" id="about-heading">A Studio Built on<br>Craft &amp; Curiosity</h2>
+            <div class="divider"></div>
+            <p>Paradigm is a multidisciplinary creative studio founded by designers and technologists who believe that great design is never an accident. We work closely with our clients — from ambitious startups to established brands — to craft digital experiences that are both beautiful and purposeful.</p>
+            <p style="margin-top:1rem;">Our process is collaborative, transparent, and deeply iterative. We don't stop until the work is right.</p>
+
+            <div class="about-stats">
+              <div class="stat-box">
+                <div class="num">120+</div>
+                <div class="label">Projects Completed</div>
+              </div>
+              <div class="stat-box">
+                <div class="num">8</div>
+                <div class="label">Years of Experience</div>
+              </div>
+              <div class="stat-box">
+                <div class="num">40+</div>
+                <div class="label">Happy Clients</div>
+              </div>
+              <div class="stat-box">
+                <div class="num">15</div>
+                <div class="label">Industry Awards</div>
+              </div>
+            </div>
+
+            <div style="margin-top:2rem;">
+              <a href="about.html" class="btn btn--outline-dark">Learn More About Us</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES / FEATURES ========== -->
+    <section class="section section--dark" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-label">What We Offer</p>
+          <h2 class="section-title" id="services-heading">Our Core Services</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">We combine strategy, design, and technology to deliver solutions that drive real results.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <h3>Brand Identity</h3>
+            <p>From logo design to full brand systems — we build identities that are distinctive, versatile, and built to last.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Web Design &amp; Dev</h3>
+            <p>Pixel-perfect, fully responsive websites engineered for performance, accessibility, and conversion.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3>Mobile Applications</h3>
+            <p>Native and cross-platform mobile apps with intuitive UX and seamless user journeys.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📊</div>
+            <h3>Digital Strategy</h3>
+            <p>Data-driven marketing strategies, SEO foundations, and growth roadmaps tailored to your goals.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎬</div>
+            <h3>Motion &amp; Video</h3>
+            <p>Compelling motion graphics, explainer videos, and brand films that communicate your story visually.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">☁️</div>
+            <h3>Cloud &amp; Hosting</h3>
+            <p>Reliable, scalable cloud infrastructure with 99.9% uptime guarantees and 24/7 monitoring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY PREVIEW ========== -->
+    <section class="section section--light" id="work-preview" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-label">Recent Work</p>
+          <h2 class="section-title" id="work-heading">Selected Projects</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">A snapshot of our latest creative output across branding, web, and digital.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery-1.jpg" alt="Project: Branding identity for tech startup" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Brand Identity</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-2.jpg" alt="Project: E-commerce website design" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-3.jpg" alt="Project: Mobile app UI design" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Mobile App</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-4.jpg" alt="Project: Digital marketing campaign" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Digital Campaign</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-5.jpg" alt="Project: Product photography" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-6.jpg" alt="Project: Motion graphics reel" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Motion Graphics</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-7.jpg" alt="Project: Print design series" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Print Design</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-8.jpg" alt="Project: Logo and visual identity" />
+            <div class="gallery-overlay">
+              <span aria-hidden="true">🔍</span>
+              <p>Visual Identity</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="gallery.html" class="btn btn--outline-dark">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CALL TO ACTION ========== -->
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to Start<br>Something Great?</h2>
+        <p>Tell us about your project and let's create something you'll be proud of. We respond within 24 hours.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn--primary">Get a Free Quote</a>
+          <a href="gallery.html" class="btn btn--outline">Browse Our Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT PREVIEW ========== -->
+    <section class="section" id="contact-preview" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title" id="contact-heading">Let's Talk</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">Have a project in mind? Drop us a message and we'll get back to you quickly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <div class="contact-detail">
+              <div class="detail-icon" aria-hidden="true">📍</div>
+              <div class="detail-text">
+                <p class="label-sm">Address</p>
+                <p>123 Design Avenue, Suite 400<br>New York, NY 10001</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="detail-icon" aria-hidden="true">📞</div>
+              <div class="detail-text">
+                <p class="label-sm">Phone</p>
+                <p>+1 (212) 555-0190</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="detail-icon" aria-hidden="true">✉️</div>
+              <div class="detail-text">
+                <p class="label-sm">Email</p>
+                <p>hello@paradigm.studio</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="detail-icon" aria-hidden="true">🕐</div>
+              <div class="detail-text">
+                <p class="label-sm">Office Hours</p>
+                <p>Mon–Fri: 9:00 AM – 6:00 PM EST</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="#" method="post" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="home-name">Full Name</label>
+                  <input type="text" id="home-name" name="name" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="home-email">Email Address</label>
+                  <input type="email" id="home-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="home-subject">Subject</label>
+                <input type="text" id="home-subject" name="subject" placeholder="How can we help?" />
+              </div>
+              <div class="form-group">
+                <label for="home-message">Message</label>
+                <textarea id="home-message" name="message" placeholder="Tell us about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send Message &#8594;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Para<span>digm</span></a>
+          <p>A creative studio dedicated to building bold digital products that connect brands with people. Based in New York City.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html">Brand Identity</a></li>
+            <li><a href="about.html">Web Design</a></li>
+            <li><a href="about.html">Mobile Apps</a></li>
+            <li><a href="about.html">Digital Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Get updates on our latest work and creative insights.</p>
+          <form class="newsletter-form" action="#" method="post" novalidate>
+            <label for="footer-email" class="sr-only">Email for newsletter</label>
+            <input type="email" id="footer-email" name="footer-email" placeholder="Enter your email" required autocomplete="email" />
+            <button type="submit" aria-label="Subscribe to newsletter">&#8594;</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 <a href="index.html">Paradigm Studio</a>. All rights reserved.</p>
+        <nav aria-label="Social media links">
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Follow us on Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Connect on LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Watch on YouTube">▶</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== INLINE SCRIPTS (No external JS) ========== -->
+  <script>
+    /* --- Navbar scroll effect --- */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* --- Mobile nav toggle --- */
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    /* Close on link click */
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
+
+    /* --- Hero Slider (CSS transitions, no library) --- */
+    const slides = document.querySelectorAll('.slide');
+    const dots   = document.querySelectorAll('.dot');
+    let current  = 0;
+    let timer;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      dots[current].setAttribute('aria-selected', 'false');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+      dots[current].setAttribute('aria-selected', 'true');
+    }
+
+    function startAuto() { timer = setInterval(() => goTo(current + 1), 5000); }
+    function stopAuto()  { clearInterval(timer); }
+
+    document.querySelector('.slider-next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+    document.querySelector('.slider-prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); }));
+
+    startAuto();
+  </script>
+
+</body>
+</html>
